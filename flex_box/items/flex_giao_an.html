@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giáo án</title>
+    <style>
+        .navbar {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 10px;
+            gap: 20px;
+            height: 80px;
+            /* Thêm chiều cao để thấy rõ căn chỉnh dọc */
+            align-items: center;
+            /* Căn chỉnh các item theo chiều dọc ở giữa container (mặc định) */
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #f0f0f0;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            background-color: #ddd;
+        }
+
+        /* Thay đổi thứ tự hiển thị của link "Trang chủ" và "Liên hệ" */
+        .navbar a:first-child {
+            /* Chọn link "Trang chủ" */
+            order: 3;
+            /* Đẩy xuống vị trí thứ 3 (tính từ 0) */
+        }
+
+        .navbar a:last-child {
+            /* Chọn link "Liên hệ" */
+            order: -1;
+            /* Đẩy lên vị trí đầu tiên (số âm có độ ưu tiên cao hơn) */
+        }
+
+        /* Căn chỉnh riêng link "Giới thiệu" xuống dưới cùng */
+        .navbar a:nth-child(2) {
+            /* Chọn link "Giới thiệu" */
+            align-self: flex-end;
+            /* Ghi đè align-items và căn xuống cuối container */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" style="flex: 1;">Trang chủ</a>
+        <a href="#" style="flex: 2;">Giới thiệu</a>
+        <a href="#" style="flex: 1;">Sản phẩm</a>
+        <a href="#" style="flex: 2;">Liên hệ</a>
+    </nav>
+</body>
+
+</html>

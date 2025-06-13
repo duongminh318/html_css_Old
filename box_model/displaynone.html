@@ -1,0 +1,16 @@
+<button id="toggleButton">Ẩn/Hiện Nội Dung</button>
+<div id="content" style="display: none;">
+  Nội dung ẩn hiện
+</div>
+<h1>tôi là h1</h1>
+
+<script>
+  document.getElementById('toggleButton').addEventListener('click', function() {
+    var content = document.getElementById('content');
+    if (content.style.display === 'none') {
+      content.style.display = 'block'; /* Hiện nội dung */
+    } else {
+      content.style.display = 'none';  /* Ẩn nội dung */
+    }
+  });
+</script>

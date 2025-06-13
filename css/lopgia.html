@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lop gia</title>
+    <style>
+        button {
+            background-color: lightblue;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            /* Khi di chuột qua button */
+            background-color: darkblue;
+            color: aliceblue;
+        }
+
+        button:active {
+            background-color: rgb(153, 5, 59);
+            color: rgb(10, 132, 238);
+            transform: translateY(2px);
+            /* Hiệu ứng nút bị thấp xuống */
+        }
+
+        /* :focus (Được chọn) */
+        input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        input[type="text"]:focus {
+            /* Khi ô input được focus */
+            border-color: rgb(2, 2, 233);
+            box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+            /* Hiệu ứng bóng đổ */
+        }
+
+        /* :link (Liên kết chưa được truy cập) */
+        a:link {
+            /* Liên kết chưa truy cập */
+            color: blue;
+            text-decoration: none;
+            /* Bỏ gạch chân mặc định */
+        }
+
+        /* :visited (Liên kết đã được truy cập) */
+        a:visited {
+            /* Liên kết đã truy cập */
+            color: rgb(246, 3, 88);
+        }
+    </style>
+</head>
+
+<body>
+    <button>Nhấn vào đây</button>
+
+    <input type="text" placeholder="Nhập văn bản">
+
+    <p>
+        <a href="https://www.google.com">Google</a> (Liên kết chưa truy cập)
+    </p>
+    <p>
+        <a href="https://www.youtube.com">YouTube</a> (Liên kết đã truy cập)
+        <br>
+        <a href="#">YouTube</a> (Liên kết đã truy cập)
+    </p>
+</body>
+
+</html>

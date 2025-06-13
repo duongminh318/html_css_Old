@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .box{
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+        }
+/* nếu nhỏ hơn 600px thì áp dụng css bên dươi */
+        /* @media (max-width:600px) {
+            .box{
+                background-color: rgb(160, 8, 241);
+                width: 200px;
+                height: 200px;
+            }         
+        } */
+
+        /* nêu lớn hơn 800px thì áp dụng */
+    
+        /* @media (min-width:800px) {
+            .box{
+                background-color: rgb(8, 241, 8);
+                width: 400px;
+                height: 400px;
+            }         
+        } */
+
+         /* @media (min-width: 600px) and (max-width: 900px) {
+            .box {
+                background: red;
+                width: 200px;
+                height: 200px;
+            }
+        } */
+
+        /* @media (orientation:landscape) {
+            .box{
+                width: 600px;
+                height: 200px;
+                background-color: #ecea9d;
+            }
+            
+        } */
+
+        @media print {
+            .box{
+                width: 600px;
+                height: 200px;
+                background-color: hsl(56, 13%, 25%);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>học về media queries</p>
+    </div>
+</body>
+</html>

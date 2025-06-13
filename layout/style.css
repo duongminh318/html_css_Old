@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+
+    position: fixed;
+    /* Thêm vào style.css */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* Để h1 không bị che bởi nội dung bên dưới */
+    z-index: 10;
+    /* Đảm bảo h1 luôn ở trên cùng (sẽ học về z-index sau) */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    /* Để tạo khoảng cách với phần ghi chú */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.note {
+    position: relative;
+    /* Thêm vào style.css */
+    top: 20px;
+    /* Dịch xuống 20px so với vị trí ban đầu */
+    left: 130px;
+    /* Dịch sang phải 30px so với vị trí ban đầu */
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    visibility: hidden; /* Thêm vào style.css */
+}
+
+.mes-bottom a {
+    font-size: 2rem;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+
+table tbody td:first-child::before { /* Thêm vào style.css */
+    content: ""; /* Để tạo pseudo-element, cần có content */
+    display: inline-block; /* Hiển thị như inline block để dễ căn chỉnh và có kích thước */
+    width: 8px; /* Kích thước chiều rộng của hình vuông */
+    height: 8px; /* Kích thước chiều cao của hình vuông */
+    background-color: #007bff; /* Màu xanh dương, tương tự màu link mặc định */
+    border-radius: 2px; /* Bo góc nhẹ để hình vuông mềm mại hơn (tùy chọn) */
+    margin-right: 5px; /* Khoảng cách giữa hình vuông và tên sản phẩm */
+    vertical-align: middle; /* Căn chỉnh dọc giữa hình vuông và chữ */
+   }
+
+   table thead th::after { /* Thêm vào style.css */
+    content: "";
+    display: block; /* Để ::after hoạt động như block element */
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-top: 5px;
+   }
+   

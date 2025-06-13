@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ vận dụng</title>
+
+    <style>
+        .box {
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid black; */
+            border-radius: 8px;
+        }
+
+        .box1,
+        .box4,
+        .box5 {
+            background-color: red;
+
+        }
+
+        .box2,
+        .box3, .box6 {
+            background-color: rgb(38, 0, 255);
+
+        }
+
+        .container {
+            /* height: 300px; */
+            display: grid;
+            height: 100vh;
+           gap: 2px;
+           background: green;
+           grid-template-columns: 100px 200px;
+           grid-template-rows: 50px 100px 200px;
+          /* align-items: stretch; */
+          /* align-items: center; */
+          /* align-items: start; */
+          /* align-items: end; */
+
+          /* justify-items: center; */
+          /* justify-items: end; */
+
+          /* align-content: end; */
+          /* align-content: start; */
+          /* align-content: space-between; */
+          /* align-content: space-around; */
+          /* align-content: space-evenly; */
+
+
+          /* justify-content: end;
+          justify-content: start;
+          justify-content: space-between;
+          justify-content: space-around;
+          justify-content: space-evenly; */
+          /* place-content: space-around end; */
+          
+
+        }
+        .box1{
+          /* align-self: center; */
+          /* justify-self: end; */
+          /* place-self:center end; */
+        }
+
+        .box2{
+          
+          
+        }
+
+        .box3{
+          
+         
+        }
+        .box4{
+          
+        }
+
+        .box5{
+           
+          
+          
+        }
+
+
+     
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">Item 1</div>
+        <div class="box box2">Item 2</div>
+        <div class="box box3">Item 3</div>
+        <div class="box box4">Item 4</div>
+        <div class="box box5">Item 5</div>
+        <!-- <div class="box box6">Item 6</div> -->
+
+
+    </div>
+
+</body>
+
+</html>

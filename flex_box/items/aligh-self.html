@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Order</title>
+    <style>
+        .container {
+            height: 150px;
+            display: flex;
+            background-color: cyan;
+            /* align-items: flex-start; */
+            /* xuống hàng */
+            /* flex-wrap: wrap; */
+            /* overflow: auto; */
+        }
+
+        
+        .box{
+            /* background-color: blue; */
+            border: 1px solid black;
+            
+           
+            width: 30%;
+        }
+
+        .box1{
+            background-color: red;
+            
+        }
+
+        .box2{
+            background-color: green;
+            align-self: flex-end;
+         
+        }
+
+        .box3{
+            background-color: yellow;
+            align-self: center;
+          
+        }
+
+        .box4,.box5, .box6{
+            align-self: flex-start;
+        }
+
+   
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Block 1 </div>
+        <div class="box box2">Block 2 </div>
+        <div class="box box3">Block 3 </div>
+        <div class="box box4">Block 4 </div>
+        <div class="box box5">Block 5 </div>
+        <div class="box box6">Block 6 </div>
+     
+
+    </div>
+</body>
+</html>

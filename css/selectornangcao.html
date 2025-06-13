@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ Selector nâng cao</title>
+
+    <style>
+        /* Selector bên trong (Descendant Selector) */
+        .container p {
+            color: green;
+        }
+
+        /* Selector con (child Selector) */
+        .container>p {
+            font-weight: bold;
+        }
+
+        /* Selector anh em liền kề (Adjacent Sibling Selector) */
+        h1+p {
+            text-decoration: line-through;
+        }
+
+        /* Kết hợp các loại selector */
+        .container div p {
+            font-style: italic;
+        }
+
+        #main-nav>li>a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Đoạn văn bản bên trong container.</p>
+        <div>
+            <p>Đoạn văn bản lồng nhau.</p>
+        </div>
+        <p> p con của container</p>
+    </div>
+
+    <h1>Tiêu đề chính</h1>
+    <p>Đoạn văn bản đầu tiên.</p>
+    <p>Đoạn văn bản thứ 2 .</p>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

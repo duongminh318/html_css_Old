@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Blog Cá Nhân Của Tôi - Ví Dụ Tổng Hợp</title> <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            gap: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            flex: 3;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        aside {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background: #333;
+            color: #fff;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        /* Dùng class để định dạng cho thẻ span */
+        .highlight {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Chào Mừng Đến Với Blog Cá Nhân Của Tôi!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="margin-top: 20px;">
+
+        <main>
+            <article>
+                <h2>HTML là gì và tại sao nó quan trọng?</h2>
+                <p><i>Đăng ngày: 07 tháng 06, 2025</i> bởi Tác Giả</p>
+                
+                <img src="https://placehold.co/800x400/5cb85c/ffffff?text=HTML5+is+Awesome" 
+                     alt="Một hình ảnh minh họa về logo HTML5" 
+                     width="800" 
+                     height="400">
+
+                <p>HTML, viết tắt của <b>HyperText Markup Language</b>, là ngôn ngữ đánh dấu tiêu chuẩn để tạo ra các trang web.
+                   Nó không phải là ngôn ngữ lập trình, mà là <span class="highlight">ngôn ngữ cấu trúc</span>.
+                   Hãy nghĩ về nó như bộ xương của một cơ thể.</p>
+                
+                <h3>Các bước để bắt đầu với HTML</h3>
+                <ol>
+                    <li>Học về cấu trúc cơ bản (`html`, `head`, `body`).</li>
+                    <li>Tìm hiểu các thẻ nội dung quan trọng.</li>
+                    <li>Thực hành viết một trang web đơn giản.</li>
+                </ol>
+
+                <p>Đây là một dòng văn bản.<br>Và đây là dòng mới sau khi dùng thẻ &lt;br&gt; để ngắt dòng.</p>
+
+                <hr>
+
+                <section>
+                    <h3>Bình luận</h3>
+                    <ul>
+                        <li>Người dùng A: Bài viết rất hay!</li>
+                        <li>Người dùng B: Cảm ơn vì đã chia sẻ.</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+
+        <aside id="sidebar">
+            <h3>Về Tác Giả</h3>
+            <img src="https://placehold.co/300x200/0275d8/ffffff?text=Author+Photo" alt="Ảnh đại diện của tác giả">
+            <p>Đây là một đoạn giới thiệu ngắn về tác giả của blog này.</p>
+            <h3>Các Chuyên Mục</h3>
+            <ul>
+                <li><a href="#">Lập trình Web</a></li>
+                <li><a href="#">Cuộc sống</a></li>
+                <li><a href="#">Du lịch</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>Bản quyền © 2025 - Blog Cá Nhân Của Tôi</p>
+        <p>
+            Theo dõi tôi trên:
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.product-list {
+
+    display: grid;
+    /* 3 cột, mỗi cột chiếm 1 phần không gian bằng nhau */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Ví dụ khác (giải thích thêm): */
+    /* grid-template-columns: 200px 1fr auto; */
+    /* Cột 1: 200px, Cột 3: auto, Cột 2: chiếm phần còn lại */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* Cách viết ngắn gọn cho 3 cột 1fr */
+    /* Định nghĩa 2 hàng, chiều cao tự động theo nội dung */
+    /* grid-template-rows: auto auto; */
+    /* Định nghĩa 2 hàng, mỗi hàng cao 150px */
+    grid-template-rows: 150px;
+    border: 2px solid dodgerblue;
+    padding: 10px;
+}
+
+.product-item {
+    background-color: lightcoral;
+    border: 1px solid crimson;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Thêm màu sắc khác nhau để dễ phân biệt (tùy chọn) */
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #ef476f;
+}
+
+.item-2 {
+    background-color: #ffd166;
+}
+
+.item-3 {
+    background-color: #06d6a0;
+}
+
+.item-4 {
+    background-color: #118ab2;
+}
+
+.item-5 {
+    background-color: #073b4c;
+}
+
+.item-6 {
+    background-color: #ff8fab;
+}

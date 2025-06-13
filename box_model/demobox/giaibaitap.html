@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Định dạng body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #F0F0F0;
+            padding: 20px;
+        }
+        
+        /* Container chính */
+        .blog-container {
+            max-width: 1200px;
+            min-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Tiêu đề và nút điều khiển */
+        h1 {
+            text-align: center;
+            color: #1A1A1A;
+            font-size: 34px;
+            margin-bottom: 25px;
+        }
+        .toggle-all-btn {
+            display: block;
+            width: 25%;
+            min-height: 60px;
+            margin: 0 auto 30px;
+            padding: 10px 5px;
+            border: 3px solid #666;
+            background: #D9D9D9;
+            color: #1A1A1A;
+            cursor: pointer;
+        }
+        
+        /* Danh sách bài viết */
+        .post-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        /* Thẻ bài viết */
+        .post-card {
+            width: 30%;
+            max-width: 350px;
+            min-height: 320px;
+            background: #FFF;
+            padding: 20px;
+            border: 2px solid #B0B0B0;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        /* Nút đọc thêm và ẩn bài */
+        .read-btn, .hide-btn {
+            display: block;
+            margin: 15px auto 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .read-btn {
+            min-width: 150px;
+            background: #008080;
+            color: #FFF;
+            border: 1px solid #008080;
+        }
+        .hide-btn {
+            min-width: 120px;
+            background: #FF4500;
+            color: #FFF;
+            border: 1px solid #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <h1>Blog Posts</h1>
+        <button class="toggle-all-btn">Ẩn/Hiện tất cả</button>
+        
+        <div class="post-list">
+            <div class="post-card">
+                <h2>CSS Tips</h2>
+                <p class="summary">Những mẹo hay để học CSS nhanh chóng...</p>
+                <button class="read-btn">Đọc thêm</button>
+                <button class="hide-btn">Ẩn bài này</button>
+            </div>
+            <div class="post-card">
+                <h2>Web Design 101</h2>
+                <p class="summary">Những nguyên tắc cơ bản về thiết kế web...</p>
+                <button class="read-btn">Đọc thêm</button>
+                <button class="hide-btn">Ẩn bài này</button>
+            </div>
+            <div class="post-card">
+                <h2>Web Design 101</h2>
+                <p class="summary">Những nguyên tắc cơ bản về thiết kế web...</p>
+                <button class="read-btn">Đọc thêm</button>
+                <button class="hide-btn">Ẩn bài này</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Chức năng ẩn/hiện toàn bộ danh sách bài viết
+        document.querySelector('.toggle-all-btn').addEventListener('click', function() {
+            var postList = document.querySelector('.post-list');
+            postList.style.display = (postList.style.display === 'none') ? 'flex' : 'none';
+        });
+        
+        // Chức năng ẩn từng bài viết riêng lẻ
+        document.querySelectorAll('.hide-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.parentElement.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

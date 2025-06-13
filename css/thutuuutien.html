@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> thứ tự ưu tiên
+    </title>
+    <style>
+        p {
+            color: gray;
+        }
+
+        /* Tag selector (1 điểm) */
+
+        .text-blue {
+            /* Class selector (10 điểm) - Ưu tiên hơn tag selector */
+            color: blue;
+        }
+
+        #paragraph-1 {
+            /* ID selector (100 điểm) - Ưu tiên hơn class selector */
+            color: green;
+        }
+
+        /* !important */
+        p {
+            color: gray !important;
+        }
+
+        /* Rule này sẽ luôn được ưu tiên */ 
+        .text-blue {
+            color: blue;
+        }
+
+        #paragraph-1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="paragraph-1" class="text-blue" style="color: brown;" ">
+      Đoạn văn bản
+    </p>
+    
+    <p>
+      Đoạn văn bản với !important
+    </p>
+    
+    <div class=" container">
+    <p>Đoạn văn bản 1.</p>
+    <div>
+        <p>Đoạn văn bản 2.</p>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.box {
+width: 100px;
+height: 100px;
+color: yellow;
+background-color: red;
+padding: 20px; /* Thêm khoảng đệm */
+padding-top: 30px;
+border-radius: 30px;
+/* content: none; */
+}
